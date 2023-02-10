@@ -1,0 +1,16 @@
+#ifndef ALPHABET_GENERATION_H
+#define ALPHABET_GENERATION_H
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int generation_alphabet(
+        string* alphabet,
+        int* length_alphabet,
+        bool take_digit_flag,
+        bool take_small_symbol_flag,
+        bool take_large_symbol_flag,
+        bool take_special_symbol_flag);
+#endif //ALPHABET_GENERATION_H
