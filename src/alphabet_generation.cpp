@@ -21,12 +21,15 @@ int generation_alphabet(
     if (take_digit_flag) {
         *alphabet += digit_alphabet;
     }
+    
     if (take_small_symbol_flag) {
         *alphabet += small_character;
     }
+
     if (take_large_symbol_flag) {
         *alphabet += large_character;
     }
+
     if (take_special_symbol_flag) {
         *alphabet += special_symbol;
     }
