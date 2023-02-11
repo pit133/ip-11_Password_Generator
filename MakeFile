@@ -13,7 +13,6 @@ OBJECTS_TEST = build/test/main.o build/test/tests.o build/src/alphabet_generatio
 all: build bin bin/main test
 
 test: build bin bin/main_test
-	bin/main_test
 
 bin/main_test: $(OBJECTS_TEST)
 	$(CXX) $(FLAGS) $(OBJECTS_TEST) -o bin/main_test
