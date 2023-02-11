@@ -18,11 +18,11 @@ test: build bin bin/main_test
 bin/main_test: $(OBJECTS_TEST)
 	$(CXX) $(FLAGS) $(OBJECTS_TEST) -o bin/main_test
 
-build/test/main.o: test/main.c
-	$(C) $(CFLAGS) test/main.c -I thirdparty/ -I src/ -o build/test/main.o
+build/test/main.o: test/main.cpp
+	$(CXX) $(CFLAGS) test/main.cpp -I thirdparty/ -I src/ -o build/test/main.o
 
-build/test/tests.o: test/tests.c
-	$(C) $(CFLAGS) test/tests.c -I thirdparty/ -I src/ -o build/test/tests.o
+build/test/tests.o: test/tests.cpp
+	$(CXX) $(CFLAGS) test/tests.cpp -I thirdparty/ -I src/ -o build/test/tests.o
 
 bin/main: $(OBJECTS)
 	$(CXX) $(FLAGS) $(OBJECTS) -o bin/main
