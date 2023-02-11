@@ -1,4 +1,5 @@
 CXX = g++
+C = gcc
 
 FLAGS = -Wall -Werror
 
@@ -18,10 +19,10 @@ bin/main_test: $(OBJECTS_TEST)
 	$(CXX) $(FLAGS) $(OBJECTS_TEST) -o bin/main_test
 
 build/test/main.o: test/main.c
-	$(CXX) $(CFLAGS) test/main.c -I thirdparty/ -I src/ -o build/test/main.o
+	$(C) $(CFLAGS) test/main.c -I thirdparty/ -I src/ -o build/test/main.o
 
 build/test/tests.o: test/tests.c
-	$(CXX) $(CFLAGS) test/tests.c -I thirdparty/ -I src/ -o build/test/tests.o
+	$(C) $(CFLAGS) test/tests.c -I thirdparty/ -I src/ -o build/test/tests.o
 
 bin/main: $(OBJECTS)
 	$(CXX) $(FLAGS) $(OBJECTS) -o bin/main
