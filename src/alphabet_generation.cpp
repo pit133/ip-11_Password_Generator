@@ -1,4 +1,4 @@
-#include "alphabet_generation.h"
+#include "alphabet_generation.hpp"
 
 
 const string digit_alphabet = "0123456789";
