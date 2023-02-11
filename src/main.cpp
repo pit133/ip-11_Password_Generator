@@ -1,5 +1,5 @@
-#include "alphabet_generation.h"
-#include "handling_main_argument.h"
+#include "alphabet_generation.hpp"
+#include "handling_main_argument.hpp"
 
 using namespace std;
 
