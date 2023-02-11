@@ -1,7 +1,8 @@
-#ifndef ALPHABET_GENERATION_H
-#define ALPHABET_GENERATION_H
+#pragma once
 
 #include <iostream>
+#include <string>
+#include <cstdlib>
 #include <string>
 
 using namespace std;
@@ -13,4 +14,4 @@ int generation_alphabet(
         bool take_small_symbol_flag,
         bool take_large_symbol_flag,
         bool take_special_symbol_flag);
-#endif //ALPHABET_GENERATION_H
+

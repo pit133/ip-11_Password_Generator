@@ -1,5 +1,6 @@
 #include "ctest.h"
 #include <string>
+
 #include "alphabet_generation.hpp"
 
 CTEST(ALPHABET_GENERATION, ALPHABET_FLAG)

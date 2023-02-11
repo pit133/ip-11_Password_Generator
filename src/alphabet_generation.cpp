@@ -1,9 +1,5 @@
-#include "alphabet_generation.h"
+#include "alphabet_generation.hpp"
 
-#include <cstdlib>
-#include <string>
-
-using namespace std;
 
 const string digit_alphabet = "0123456789";
 const string small_character = "abcdefghijklmnopqrstuvwxyz";
