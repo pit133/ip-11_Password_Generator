@@ -1,6 +1,8 @@
 #define CTEST_MAIN
+#define CTEST_SEGFAULT
+#define CTEST_COLOR_OK
 
-#include <ctest.h>
+#include "ctest.h"
 
 int main(int argc, const char** argv)
 {
