@@ -1,5 +1,5 @@
 #include "ctest.h"
-#include <string>
+#include <string.h>
 
 #include "alphabet_generation.h"
 
