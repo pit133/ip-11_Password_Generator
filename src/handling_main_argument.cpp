@@ -18,6 +18,7 @@ int handling_main_argument(
     bool* large_symbol_flag,
     bool* special_symbol_flag)
 {
+    setlocale (LC_ALL, "ru");
     int i = 1;
     int temp = 0;
    
@@ -48,9 +49,19 @@ int handling_main_argument(
     for (int j = i; j <= argc; j++)
     {
         if (!strcmp(argv[j], "-h")) {
-            cout << "HELP\n";
+            cout << "Считывание опций выбранных пользователем при вызове генератора паролей." << endl
+                <<"pwgen[pw_length][num_pw][OPTION]"<< endl
+                << "-s - Использовать специальные символы в пароле."<< endl 
+                << "-0 - Использовать цифры в пароле."<< endl
+                << "-A - Использовать заглавные буквы в пароле."<< endl 
+                << "-a - Использовать прописные буквы в пароле."<< endl;
             i++;
         }
+
+        if (!strcmp(argv[j], "-s")) {
+            *special_symbol_flag = false;
+            i++;
+        }        
 
         if (!strcmp(argv[j], "-0")) {
             *digit_flag = false;
@@ -63,8 +74,7 @@ int handling_main_argument(
         }
 
         if (!strcmp(argv[j], "-a")) {
-            *small_symbol_flag = false;
-            cout << "small";
+            *small_symbol_flag = false;     
             i++;
         }
 
